@@ -1,0 +1,12 @@
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" />
+  </div>
+  
+  <div>
+    <label for="password">Password:</label>
+    <input type="text" id="password" [(ngModel)]="password" />
+  </div>
+  
+  <button (click) ="onPut()">Уже зарегестрирован</button>
+  <button (click)="onSubmit()">Зарегестрироваться</button>

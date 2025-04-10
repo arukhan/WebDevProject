@@ -1,0 +1,9 @@
+<div *ngIf="resumes.length > 0; else loading">
+    <div *ngFor="let resume of resumes">
+      <h2>{{ resume.name }}</h2>
+    </div>
+  </div>
+  
+  <ng-template #loading>
+    <p>Загрузка резюме...</p>
+  </ng-template>
