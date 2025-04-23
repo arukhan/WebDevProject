@@ -1,10 +1,28 @@
 <div class="wrapper">
-    <h2 class="title"> Protected Page</h2>
-        <div class="container">
-            <p class="message" *ngIf="message">{{ message }}</p>  
-            
-            <div class="vacancylist-section">
-            <app-vacancylist></app-vacancylist>
-          </div>
-        </div>
+  <h2 class="title"> Protected Page</h2>
+  <div class="protected-nav">
+      <a routerLink="/vacancy" class="nav-button">📄 Вакансии</a>
+      <a routerLink="/company" class="nav-button">🏢 Компании</a>
+      <a routerLink="/resume" class="nav-button">👤 Резюме</a>
+    </div>
+    <p class="message" *ngIf="message">{{ message }}</p>  
+
+  <div class="back"></div> 
+  <div class="hero-section">
+    <div class="hero-content">
+      
+      <h1>Найди работу мечты</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Профессия, должность или компания" />
+        <button class="search-btn">Найти</button>
       </div>
+      <a href="#" class="alt-link">Я ищу сотрудника</a>
+      <div class="stats">
+        <span>6 610 099 резюме</span>
+        <span>48 750 вакансий</span>
+        <span>126 100 компаний</span>
+      </div>
+  </div>
+   </div>   
+      
+    </div>

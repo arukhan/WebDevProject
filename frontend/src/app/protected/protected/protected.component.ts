@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { inject } from '@angular/core';
-import { Router } from '@angular/router';
-import { VacancylistComponent } from '../../vacancylist/vacancylist/vacancylist.component';
+import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-protected',
-  imports: [VacancylistComponent, NgIf],
+  imports: [CommonModule, RouterModule, NgIf],
   templateUrl: './protected.component.html',
   styleUrl: './protected.component.css'
 })
