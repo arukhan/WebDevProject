@@ -1,7 +1,7 @@
 <div class="wrapper">
   <h2 class="icon">Вакансии</h2>
   <div class="container">
-<div *ngIf="vacancies.length > 0; else loading">
+    <div *ngIf="vacancies.length > 0; else loading">
     <div *ngFor="let vacancy of vacancies" class="vacancy">
       <h2 class="title">{{ vacancy.name }}</h2>
       <p><strong>Компания:</strong> {{ vacancy.company_id }}</p>

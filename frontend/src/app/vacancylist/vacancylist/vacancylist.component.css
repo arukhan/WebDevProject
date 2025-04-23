@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: 3rem;
-  padding: 2rem 1rem;
-  max-width: 100%;
+  padding: 2rem 0; 
+  width: 100%;      
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 .icon {
   font-size: 1.75rem;
   padding: 15px;
-  width: 100%;
+  width: 97%;
   margin: 0;
   font-weight: 700;
   text-align: center;
@@ -24,17 +24,18 @@
 }
 
 .container {
-  position: relative;
-  top: 100px;
-  left: 400px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
-
 
 .vacancy {
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 1rem;
-  width: 50%;
+  width: 800px; 
+  height: 170px;
+  max-width: 800px; 
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
@@ -44,6 +45,8 @@
 
 .vacancy:hover {
   transform: translateY(-4px);
+  transition: 0.3 ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
   
   .title {
@@ -58,7 +61,6 @@
     color: #4b5563;
     margin: 0.3rem 0;
   }
-  
   
   .loading-message {
     font-size: 1rem;
