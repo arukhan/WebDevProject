@@ -1,16 +1,52 @@
 <div class="wrapper">
-  <h2 class="icon">Вакансии</h2>
-  <div class="container">
-    <div *ngIf="vacancies.length > 0; else loading">
-    <div *ngFor="let vacancy of vacancies" class="vacancy">
-      <h2 class="title">{{ vacancy.name }}</h2>
-      <p><strong>Компания:</strong> {{ vacancy.company_id }}</p>
-      <p><strong>Опыт работы:</strong> {{ vacancy.experience }}</p>
-      <p><strong>Зарплата:</strong> {{ vacancy.salary }} ₸</p>
+  <h2 class="icon">📄 Вакансии</h2>
+
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+    <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 24px;">
+      <button (click)="goHome()" style="
+        padding: 10px 20px;
+        min-width: 150px;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;">
+        🏠 На главную
+      </button>
+
+      <button (click)="logout()" style="
+        padding: 10px 20px;
+        min-width: 150px;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        background-color: #f44336;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;">
+        🚪 Выйти
+      </button>
     </div>
+
+    <div *ngIf="vacancies.length > 0; else loading">
+      <div *ngFor="let vacancy of vacancies" class="vacancy">
+        <h3 class="title">{{ vacancy.name }}</h3>
+        <p class="vacancy-info"><strong>Компания:</strong> {{ vacancy.company_id }}</p>
+        <p class="vacancy-info"><strong>Опыт работы:</strong> {{ vacancy.experience }}</p>
+        <p class="vacancy-info"><strong>Зарплата:</strong> {{ vacancy.salary }} ₸</p>
+      </div>
+    </div>
+
+    <ng-template #loading>
+      <p style="text-align: center; margin-top: 40px;">⏳ Загрузка вакансий...</p>
+    </ng-template>
+
   </div>
-  </div>
-  <ng-template #loading>
-    <p>Загрузка вакансий...</p>
-  </ng-template>
 </div>

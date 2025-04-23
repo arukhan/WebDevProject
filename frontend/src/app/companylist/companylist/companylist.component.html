@@ -1,6 +1,38 @@
 <div class="wrapper">
   <h2 class="icon">Компании</h2>
-  <div class="container">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+    <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 24px;">
+      <button (click)="goHome()" style="
+        padding: 10px 20px;
+        min-width: 150px;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;">
+        🏠 На главную
+      </button>
+
+      <button (click)="logout()" style="
+        padding: 10px 20px;
+        min-width: 150px;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        background-color: #f44336;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;">
+        🚪 Выйти
+      </button>
+    </div>
     <div *ngFor="let company of companies" class="company">
       
       <h3 class="title">{{ company.name }}</h3>

@@ -15,7 +15,7 @@ export class ServiceService {
   private registrationUrl = 'http://127.0.0.1:8000/api/register/'
   private vacanciesUrl = 'http://127.0.0.1:8000/api/vacancy/'
   private companyUrl = 'http://localhost:8000/api/company/'
-  private resumeUrl = 'http://localhost:8000/api/resume/'
+  private resumeUrl = 'http://localhost:8000/api/resumes/'
 
   constructor(private http: HttpClient) {}
 
