@@ -1,4 +1,14 @@
-
-<div *ngFor="let company of companies" class="vacancy">
-    <h2>{{ company.name }}</h2>
+<div class="wrapper">
+  <h2 class="title">Компании</h2>
+  <div class="container">
+    <div *ngFor="let company of companies" class="company">
+      <div class="header">
+        <h3 class="name">{{ company.name }}</h3>
+      </div>
+      <p class="company-info"><strong>Город:</strong> {{ company.city }}</p>
+      <p class="company-info"><strong>Адрес:</strong> {{ company.address }}</p>
+      <p class="company-info"><strong>Сфера:</strong> {{ company.field }}</p>
+      <p class="company-info"><strong>Описание:</strong> {{ company.description }}</p>
+    </div>
+  </div>
 </div>

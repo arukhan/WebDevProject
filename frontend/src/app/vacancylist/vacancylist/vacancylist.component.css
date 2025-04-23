@@ -1,0 +1,49 @@
+.wrapper {
+  padding: 2rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+} 
+
+
+  .container {
+    position: relative;
+    top: 5px;
+    left: 50px;
+  }
+
+  .vacancy {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #3b82f6;
+    transition: transform 0.2s ease;
+  }
+  
+  .vacancy:hover {
+    transform: translateY(-4px);
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+
+  .vacancy-info {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin: 0.3rem 0;
+  }
+  
+  
+  .loading-message {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    padding: 1rem;
+  }

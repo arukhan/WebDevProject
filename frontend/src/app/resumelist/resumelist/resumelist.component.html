@@ -1,9 +1,19 @@
-<div *ngIf="resumes.length > 0; else loading">
-    <div *ngFor="let resume of resumes">
-      <h2>{{ resume.name }}</h2>
+<div class="wrapper">
+  <span class="icon">Резюме</span>
+  <div class="container">
+  <div *ngIf="resumes.length > 0; else loading">
+    <div *ngFor="let resume of resumes" class="resume">
+      <div class="header">
+        
+        <h3 class="title">{{ resume.name }}</h3>
+      </div>
+      <p class="resume-info"> Возраст: {{resume.age}} </p>
+      <p class="resume-info"> Опыт работы: {{resume.experience}} </p>
+      <p class="resume-info"> Специальность: {{resume.speciality}} </p>
     </div>
   </div>
-  
   <ng-template #loading>
-    <p>Загрузка резюме...</p>
+    <p class="loading-message">Загрузка резюме...</p>
   </ng-template>
+</div>
+</div>

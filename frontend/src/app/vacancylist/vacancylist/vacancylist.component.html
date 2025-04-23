@@ -1,12 +1,15 @@
+<div class="wrapper">
+  <div class="container">
 <div *ngIf="vacancies.length > 0; else loading">
     <div *ngFor="let vacancy of vacancies" class="vacancy">
-      <h2>{{ vacancy.name }}</h2>
+      <h2 class="title">{{ vacancy.name }}</h2>
       <p><strong>Компания:</strong> {{ vacancy.company_id }}</p>
       <p><strong>Опыт работы:</strong> {{ vacancy.experience }}</p>
-      <p><strong>Зарплата:</strong> {{ vacancy.salary }}</p>
+      <p><strong>Зарплата:</strong> {{ vacancy.salary }} ₸</p>
     </div>
   </div>
-  
+  </div>
   <ng-template #loading>
     <p>Загрузка вакансий...</p>
   </ng-template>
+</div>

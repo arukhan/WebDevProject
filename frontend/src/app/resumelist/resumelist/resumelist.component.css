@@ -1,0 +1,72 @@
+.wrapper {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-height: 100vh;
+  background-color: #dee8e7;
+
+}
+
+.icon {
+  font-size: 1.75rem;
+  padding: 15px;
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+  background-color: #657181;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+}
+
+.container {
+  position: relative;
+  top: 100px;
+  left: 400px;
+}
+
+.resume {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #3b82f6;
+  transition: transform 0.2s ease;
+}
+
+.resume:hover {
+  transform: translateY(-4px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.resume-info {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.loading-message {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+}

@@ -13,6 +13,7 @@ export class RegisterComponent {
   username: string = ''
   password: string = ''
 
+
   constructor(private regservice: ServiceService, private router: Router){
 
   }
@@ -39,4 +40,3 @@ export class RegisterComponent {
     this.router.navigate(['/login']);
   }
 }
-

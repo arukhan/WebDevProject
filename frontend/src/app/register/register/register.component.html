@@ -1,12 +1,33 @@
-<div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" [(ngModel)]="username" />
+<div class="wrapper">
+<div class="form-container">
+  <h2 class="title">Welcome back!</h2>
+
+  <button class="google">
+    <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="icon" alt="Google" width="30px" />
+    Log in with Google
+  </button>
+
+  <div class="divider"><span>OR</span></div>
+
+  <div class="form-group">
+    <label for="username" >Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" placeholder="username" required/>
   </div>
   
-  <div>
-    <label for="password">Password:</label>
-    <input type="text" id="password" [(ngModel)]="password" />
+  <div class="form-group">
+    <label for="password" placeholder="password" >Password:</label>
+    <input type="text" id="password" [(ngModel)]="password" placeholder="password" required />
   </div>
+
+  <div class="options">
+    <input id="remember" type="checkbox" />
+    <label for="remember"> Remember me</label>
+  </div>
+
   
-  <button (click) ="onPut()">Уже зарегестрирован</button>
-  <button (click)="onSubmit()">Зарегестрироваться</button>
+  <div class="btns">
+    <button (click) ="onPut()">Уже зарегестрирован</button>
+    <button (click)="onSubmit()">Зарегестрироваться</button>
+  </div>
+</div>
+</div>

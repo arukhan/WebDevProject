@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  imports: [NgFor, NgIf, FormsModule],
+  imports: [NgIf, FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

@@ -1,5 +1,10 @@
-<h2>Protected Page</h2>
-    <p *ngIf="message">{{ message }}</p>
-
-
-    <app-vacancylist></app-vacancylist>
+<div class="wrapper">
+    <h2 class="title"> Protected Page</h2>
+        <div class="container">
+            <p class="message" *ngIf="message">{{ message }}</p>  
+            
+            <div class="vacancylist-section">
+            <app-vacancylist></app-vacancylist>
+          </div>
+        </div>
+      </div>
